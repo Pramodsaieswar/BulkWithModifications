@@ -1,8 +1,6 @@
 package com.bulkdata.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
@@ -63,8 +61,9 @@ public class Employee {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
+    public long setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
+        return phoneNumber;
     }
 
     public String getBranch() {
